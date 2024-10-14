@@ -477,7 +477,7 @@ class PreviewDisplay(OutputMediaType):
         hours = all_second // 3600
         minutes = (all_second % 3600) // 60
         seconds = (all_second % 3600) % 60
-        if hours > 1:
+        if hours >= 1:
             time = f"{hours:02d}:{minutes:02d}:{seconds:02d}"
         else:
             time = f"{minutes:02d}:{seconds:02d}"
