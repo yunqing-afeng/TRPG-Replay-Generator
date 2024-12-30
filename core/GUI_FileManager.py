@@ -710,6 +710,10 @@ class FileCollapsing(ttk.Frame):
                     )
                 self.rename_item_failed(origin_keyword)
                 raise Exception('重复名')
+            # 如果新名字和旧名字一模一样，那就什么什么都不做，直接return False
+            if new_keyword == origin_keyword:
+                self.rename_item_failed(origin_keyword)
+                raise Exception('重复名')
             # 删除原来的关键字
             self.items[origin_keyword].destroy()
             self.items.pop(origin_keyword)
