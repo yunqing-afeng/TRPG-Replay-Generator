@@ -2529,3 +2529,13 @@ class RplGenLog(Script):
             return True
         except:
             return False
+    def asterisk_counter(self):
+        count = 0
+        for key in self.struct:
+            this_section = self.struct[key]
+            # 如果是对话行
+            if this_section['type'] == 'dialog':
+                # 检查是否需要执行语音合成
+                if '{*}' in this_section['sound_set'].keys():
+                    count += 1
+        return count
