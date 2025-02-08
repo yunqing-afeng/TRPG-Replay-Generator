@@ -244,6 +244,10 @@ class FileManager(ttk.Frame):
             for col in imported.customize_col:
                 if col not in self.project.chartab.customize_col:
                     self.project.chartab.add_customize(colname=col)
+            # 检查，是否已有自定义列，且不在导入角色中存在
+            for col in self.project.chartab.customize_col:
+                if col not in imported.customize_col:
+                    imported.add_customize(colname=col)
             # 检查，是否存在重名对象
             for keyword in imported.struct:
                 name, subtype = keyword.split('.')
