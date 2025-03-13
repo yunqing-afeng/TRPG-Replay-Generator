@@ -946,7 +946,7 @@ class RGLCollapsing(FileCollapsing):
         if confirm_add:
             # 新建一个空白的RGL
             self.content[new_keyword] = RplGenLog(
-                string_input=tr('#! {executable}\n# {new_keyword}: 空白的剧本文件。点按键盘Tab键，获取命令智能补全。预览和导出按钮在右侧 ->\n').format(
+                string_input=tr('#! {executable}\n# {new_keyword}: 空白的剧本文件。按键盘Tab键补全命令，鼠标右键点击行号快捷预览，播放和导出按钮在右侧 ->\n').format(
                     executable=executable,
                     new_keyword=new_keyword
                 )

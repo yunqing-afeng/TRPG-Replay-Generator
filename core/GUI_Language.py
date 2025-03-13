@@ -164,7 +164,7 @@ class Translate:
             '确定要删除这个条目？\n这项删除将无法复原！': 'Sure to delete this item? This deletion cannot be recovered!',
             '尝试重命名一个已经启动的{}页面！\n重命名后，这个页面会被关闭！': 'Trying to rename a enabled {} page.\nAfter renaming, this page will be closed!',
             '失败的重命名':'Failed to Rename',
-            '#! {executable}\n# {new_keyword}: 空白的剧本文件。点按键盘Tab键，获取命令智能补全。预览和导出按钮在右侧 ->\n':'#! {executable}\n# {new_keyword}: Empty RplGenLog. Press Tab to access Text Autocomplete Engine. Preview and export buttons are on the right->\n',
+            '#! {executable}\n# {new_keyword}: 空白的剧本文件。按键盘Tab键补全命令，鼠标右键点击行号快捷预览，播放和导出按钮在右侧 ->\n':'#! {executable}\n# {new_keyword}: Empty RplGenLog. Press Tab to autocomplete, right click the line number to quick preview, export buttons are on the right->\n',
             '【{core}】执行完毕\n退出状态是：【{status}】': '[{core}] Execute done!\nExit status: [{status}]',
             "正在执行中": 'Core running!',
             "无效的执行": 'Invalid execution!',
